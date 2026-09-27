@@ -41,7 +41,59 @@ const Splashpage({super.key});
                       )
                     ),
                 ),
-              )
+              ),
+              SizedBox(height: 10,),
+
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  GestureDetector(
+                    onTap: () => Navigator.of(context).push(MaterialPageRoute(builder: (_)=>HomePage())),
+                    child: Container(
+                      height: sizeh*0.08,
+                      width: sizew/2.5,
+                      decoration: BoxDecoration(
+                        color: Colors.blue,
+                        borderRadius: BorderRadius.circular(10)
+                      ),
+                      child: Center(
+                        child: Text(
+                          "L o g i n",
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 30,
+                            fontWeight: FontWeight.w700,
+                          ),
+                          )
+                        ),
+                    ),
+                  ),
+
+                  SizedBox(width: 20,),
+
+                  GestureDetector(
+                onTap: () => Navigator.of(context).push(MaterialPageRoute(builder: (_)=>HomePage())),
+                child: Container(
+                  height: sizeh*0.08,
+                  width: sizew/2.5,
+                  decoration: BoxDecoration(
+                    color: Colors.blue,
+                    borderRadius: BorderRadius.circular(10)
+                  ),
+                  child: Center(
+                    child: Text(
+                      "S i g n u p",
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 30,
+                        fontWeight: FontWeight.w700,
+                      ),
+                      )
+                    ),
+                ),
+              ),
+                ],
+              ),
           ],
         ),
       )),
