@@ -16,10 +16,12 @@ const Splashpage({super.key});
         padding: const EdgeInsets.all(10.0),
         child: Column(
           children: [
+            SizedBox(height: sizeh*0.05,),
             Lottie.asset(
               "lib/asset/Cameras and Photography.json",
-              height: sizeh*0.7,
+              height: sizeh*0.6,
               width: sizew,
+              fit: BoxFit.contain,
               ),
               GestureDetector(
                 onTap: () => Navigator.of(context).push(MaterialPageRoute(builder: (_)=>HomePage())),
@@ -42,7 +44,7 @@ const Splashpage({super.key});
                     ),
                 ),
               ),
-              SizedBox(height: 10,),
+              SizedBox(height: sizeh*0.02,),
 
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
@@ -69,7 +71,7 @@ const Splashpage({super.key});
                     ),
                   ),
 
-                  SizedBox(width: 20,),
+                  SizedBox(width: sizew*0.04,),
 
                   GestureDetector(
                 onTap: () => Navigator.of(context).push(MaterialPageRoute(builder: (_)=>HomePage())),
