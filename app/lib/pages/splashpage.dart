@@ -35,8 +35,8 @@ const Splashpage({super.key});
                       "S t a r t",
                       style: TextStyle(
                         color: Colors.white,
-                        fontSize: 30,
-                        fontWeight: FontWeight.w700,
+                        fontSize: 25,
+                        fontWeight: FontWeight.w900,
                       ),
                       )
                     ),
@@ -61,8 +61,8 @@ const Splashpage({super.key});
                           "L o g i n",
                           style: TextStyle(
                             color: Colors.white,
-                            fontSize: 30,
-                            fontWeight: FontWeight.w700,
+                            fontSize: 25,
+                            fontWeight: FontWeight.w900,
                           ),
                           )
                         ),
@@ -85,8 +85,8 @@ const Splashpage({super.key});
                       "S i g n u p",
                       style: TextStyle(
                         color: Colors.white,
-                        fontSize: 30,
-                        fontWeight: FontWeight.w700,
+                        fontSize: 25,
+                        fontWeight: FontWeight.w900,
                       ),
                       )
                     ),
