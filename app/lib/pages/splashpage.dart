@@ -1,4 +1,4 @@
-import 'dart:collection';
+
 
 import 'package:app/pages/homepage.dart';
 import 'package:flutter/material.dart';
@@ -26,22 +26,46 @@ const Splashpage({super.key});
               GestureDetector(
                 onTap: () => Navigator.of(context).push(MaterialPageRoute(builder: (_)=>HomePage())),
                 child: Container(
-                  height: sizeh*0.08,
-                  width: sizew,
                   decoration: BoxDecoration(
-                    color: Colors.blue,
+                    border: Border.all(color: Color.fromARGB(255, 2, 106, 154)),
                     borderRadius: BorderRadius.circular(10)
                   ),
-                  child: Center(
-                    child: Text(
-                      "S t a r t",
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 25,
-                        fontWeight: FontWeight.w900,
+                  child: Stack(
+                    alignment: Alignment.center,
+                    children: [
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Lottie.asset(
+                            "lib/asset/Take a photo.json",
+                            width: sizew/2.5,
+                            height: sizeh*0.08,
+                            fit: BoxFit.contain
+                            ),
+                          
+                          Lottie.asset(
+                            "lib/asset/Take a photo.json",
+                            width: sizew/2.5,
+                            height: sizeh*0.08,
+                            fit: BoxFit.contain
+                            ),
+                        ],
                       ),
-                      )
-                    ),
+                      
+                       Center(
+                        child: Text(
+                          "S t a r t",
+                          style: TextStyle(
+                            color: const Color.fromARGB(255, 2, 106, 154),
+                            fontSize: 25,
+                            fontWeight: FontWeight.w900,
+                          ),
+                          )
+                        ),
+                    
+                    ],
+                     
+                  ),
                 ),
               ),
               SizedBox(height: sizeh*0.02,),
@@ -49,51 +73,74 @@ const Splashpage({super.key});
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
+
+
                   GestureDetector(
                     onTap: () => Navigator.of(context).push(MaterialPageRoute(builder: (_)=>HomePage())),
                     child: Container(
                       height: sizeh*0.08,
                       width: sizew/2.5,
                       decoration: BoxDecoration(
-                        color: Colors.blue,
+                        border: Border.all(color:const Color.fromARGB(255, 2, 106, 154) ),
                         borderRadius: BorderRadius.circular(10)
                       ),
-                      child: Center(
-                        child: Text(
-                          "L o g i n",
-                          style: TextStyle(
-                            color: Colors.white,
-                            fontSize: 25,
-                            fontWeight: FontWeight.w900,
+                      child: Stack(
+                        alignment: Alignment.center,
+                        children: [
+                          Lottie.asset("lib/asset/Pin code Password Protection, Secure Login animation.json"),
+                          Center(
+                          child: Text(
+                            "L o g i n",
+                            style: TextStyle(
+                              color: const Color.fromARGB(255, 1, 59, 86),
+                              fontSize: 25,
+                              fontWeight: FontWeight.w900,
+                            ),
+                            )
                           ),
-                          )
-                        ),
+                        ],
+                        
+                      ),
                     ),
                   ),
+
+
 
                   SizedBox(width: sizew*0.04,),
 
-                  GestureDetector(
-                onTap: () => Navigator.of(context).push(MaterialPageRoute(builder: (_)=>HomePage())),
-                child: Container(
-                  height: sizeh*0.08,
-                  width: sizew/2.5,
-                  decoration: BoxDecoration(
-                    color: Colors.blue,
-                    borderRadius: BorderRadius.circular(10)
-                  ),
-                  child: Center(
-                    child: Text(
-                      "S i g n u p",
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 25,
-                        fontWeight: FontWeight.w900,
+
+
+                GestureDetector(
+                    onTap: () => Navigator.of(context).push(MaterialPageRoute(builder: (_)=>HomePage())),
+                    child: Container(
+                      height: sizeh*0.08,
+                      width: sizew/2.5,
+                      decoration: BoxDecoration(
+                        border: Border.all(color:const Color.fromARGB(255, 2, 106, 154) ),
+                        borderRadius: BorderRadius.circular(10)
                       ),
-                      )
+                      child: Stack(
+                        alignment: Alignment.center,
+                        children: [
+                          Lottie.asset("lib/asset/Pin code Password Protection, Secure Login animation.json"),
+                          Center(
+                          child: Text(
+                            "S i g n u p",
+                            style: TextStyle(
+                              color: const Color.fromARGB(255, 1, 59, 86),
+                              fontSize: 25,
+                              fontWeight: FontWeight.w900,
+                            ),
+                            )
+                          ),
+                        ],
+                        
+                      ),
                     ),
-                ),
-              ),
+                  ),
+
+
+
                 ],
               ),
           ],
