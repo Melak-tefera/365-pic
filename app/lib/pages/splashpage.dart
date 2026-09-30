@@ -88,11 +88,7 @@ const Splashpage({super.key});
                         border: Border.all(color:const Color.fromARGB(255, 2, 106, 154) ),
                         borderRadius: BorderRadius.circular(10)
                       ),
-                      child: Stack(
-                        alignment: Alignment.center,
-                        children: [
-                          Lottie.asset("lib/asset/Pin code Password Protection, Secure Login animation.json"),
-                          Center(
+                      child: Center(
                           child: Text(
                             "S i g n u p",
                             style: TextStyle(
@@ -102,9 +98,6 @@ const Splashpage({super.key});
                             ),
                             )
                           ),
-                        ],
-                        
-                      ),
                     ),
                   ),
 
