@@ -30,28 +30,7 @@ const Splashpage({super.key});
                     border: Border.all(color: Color.fromARGB(255, 2, 106, 154)),
                     borderRadius: BorderRadius.circular(10)
                   ),
-                  child: Stack(
-                    alignment: Alignment.center,
-                    children: [
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          Lottie.asset(
-                            "lib/asset/Take a photo.json",
-                            width: sizew/2.5,
-                            height: sizeh*0.08,
-                            fit: BoxFit.contain
-                            ),
-                          
-                          Lottie.asset(
-                            "lib/asset/Take a photo.json",
-                            width: sizew/2.5,
-                            height: sizeh*0.08,
-                            fit: BoxFit.contain
-                            ),
-                        ],
-                      ),
-                      
+                  child:
                        Center(
                         child: Text(
                           "S t a r t",
@@ -63,9 +42,6 @@ const Splashpage({super.key});
                           )
                         ),
                     
-                    ],
-                     
-                  ),
                 ),
               ),
               SizedBox(height: sizeh*0.02,),
